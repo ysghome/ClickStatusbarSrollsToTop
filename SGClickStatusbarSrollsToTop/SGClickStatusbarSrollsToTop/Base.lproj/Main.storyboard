@@ -1,25 +1,118 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="VVi-zh-aZg">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="Iag-K4-qSc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="i5y-nk-YUG"/>
+                        <viewControllerLayoutGuide type="bottom" id="kG1-MY-tyK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="WS0-nq-LRp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xoy-LQ-t8X">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBx-wf-M4a">
+                                        <rect key="frame" x="0.0" y="0.0" width="1125" height="617"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qvW-7K-aZc">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="Iag-K4-qSc" id="GwV-86-dBn"/>
+                                                    <outlet property="delegate" destination="Iag-K4-qSc" id="wWY-tj-SMu"/>
+                                                </connections>
+                                            </tableView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iuM-gl-f6t">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="617"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="Iag-K4-qSc" id="aUK-XN-jWz"/>
+                                                    <outlet property="delegate" destination="Iag-K4-qSc" id="daJ-g1-hmh"/>
+                                                </connections>
+                                            </tableView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KMS-nb-Hva">
+                                                <rect key="frame" x="750" y="0.0" width="375" height="617"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="Iag-K4-qSc" id="zpc-bj-CHn"/>
+                                                    <outlet property="delegate" destination="Iag-K4-qSc" id="z12-cG-MV1"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="iuM-gl-f6t" firstAttribute="height" secondItem="qvW-7K-aZc" secondAttribute="height" id="3OS-iQ-OOH"/>
+                                            <constraint firstItem="KMS-nb-Hva" firstAttribute="top" secondItem="sBx-wf-M4a" secondAttribute="top" id="8eJ-f4-rw9"/>
+                                            <constraint firstItem="KMS-nb-Hva" firstAttribute="height" secondItem="iuM-gl-f6t" secondAttribute="height" id="CJ6-ic-EEr"/>
+                                            <constraint firstItem="qvW-7K-aZc" firstAttribute="top" secondItem="sBx-wf-M4a" secondAttribute="top" id="IN0-29-1nS"/>
+                                            <constraint firstItem="iuM-gl-f6t" firstAttribute="leading" secondItem="qvW-7K-aZc" secondAttribute="trailing" id="PFC-8O-65V"/>
+                                            <constraint firstItem="qvW-7K-aZc" firstAttribute="height" secondItem="sBx-wf-M4a" secondAttribute="height" id="TrQ-mY-ykd"/>
+                                            <constraint firstItem="qvW-7K-aZc" firstAttribute="leading" secondItem="sBx-wf-M4a" secondAttribute="leading" id="UL1-7N-TYz"/>
+                                            <constraint firstItem="iuM-gl-f6t" firstAttribute="top" secondItem="sBx-wf-M4a" secondAttribute="top" id="Xi4-c8-ZUH"/>
+                                            <constraint firstItem="KMS-nb-Hva" firstAttribute="leading" secondItem="iuM-gl-f6t" secondAttribute="trailing" id="d3v-A7-ruP"/>
+                                            <constraint firstItem="iuM-gl-f6t" firstAttribute="width" secondItem="qvW-7K-aZc" secondAttribute="width" id="huv-4x-dM8"/>
+                                            <constraint firstItem="KMS-nb-Hva" firstAttribute="width" secondItem="iuM-gl-f6t" secondAttribute="width" id="ki1-O2-kYe"/>
+                                            <constraint firstItem="qvW-7K-aZc" firstAttribute="width" secondItem="sBx-wf-M4a" secondAttribute="width" multiplier="1/3" id="vLp-qd-ESe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sBx-wf-M4a" secondAttribute="trailing" id="EkV-Bb-b6D"/>
+                                    <constraint firstAttribute="bottom" secondItem="sBx-wf-M4a" secondAttribute="bottom" id="HDN-z1-WeE"/>
+                                    <constraint firstItem="sBx-wf-M4a" firstAttribute="top" secondItem="Xoy-LQ-t8X" secondAttribute="top" id="T0J-ce-Ijx"/>
+                                    <constraint firstItem="sBx-wf-M4a" firstAttribute="height" secondItem="Xoy-LQ-t8X" secondAttribute="height" id="bZf-rU-nFb"/>
+                                    <constraint firstItem="sBx-wf-M4a" firstAttribute="width" secondItem="Xoy-LQ-t8X" secondAttribute="width" multiplier="3" id="dKp-KU-MIg"/>
+                                    <constraint firstItem="sBx-wf-M4a" firstAttribute="leading" secondItem="Xoy-LQ-t8X" secondAttribute="leading" id="dx9-kH-JVO"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Iag-K4-qSc" id="hFi-2V-KNQ"/>
+                                </connections>
+                            </scrollView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sPt-Wv-asF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="29"/>
+                                <segments>
+                                    <segment title="第一页"/>
+                                    <segment title="第二页"/>
+                                    <segment title="第三页"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changePageAction:" destination="Iag-K4-qSc" eventType="valueChanged" id="Jaw-e5-qkg"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sPt-Wv-asF" firstAttribute="leading" secondItem="WS0-nq-LRp" secondAttribute="leading" id="0pj-M7-rvm"/>
+                            <constraint firstAttribute="bottom" secondItem="Xoy-LQ-t8X" secondAttribute="bottom" id="GDN-b1-v2J"/>
+                            <constraint firstItem="sPt-Wv-asF" firstAttribute="width" secondItem="WS0-nq-LRp" secondAttribute="width" id="Kqe-PS-mq6"/>
+                            <constraint firstItem="sPt-Wv-asF" firstAttribute="top" secondItem="WS0-nq-LRp" secondAttribute="top" constant="20" id="REC-LW-6d3"/>
+                            <constraint firstItem="Xoy-LQ-t8X" firstAttribute="height" secondItem="WS0-nq-LRp" secondAttribute="height" constant="-50" id="ZqV-bm-tNW"/>
+                            <constraint firstItem="Xoy-LQ-t8X" firstAttribute="leading" secondItem="WS0-nq-LRp" secondAttribute="leading" id="tsh-rQ-TVL"/>
+                            <constraint firstAttribute="trailing" secondItem="Xoy-LQ-t8X" secondAttribute="trailing" id="ufV-0a-wKa"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="contentView" destination="Xoy-LQ-t8X" id="sqo-uN-wDv"/>
+                        <outlet property="pageTableView1" destination="qvW-7K-aZc" id="e08-kv-lb9"/>
+                        <outlet property="pageTableView2" destination="iuM-gl-f6t" id="cB3-V5-Chl"/>
+                        <outlet property="pageTableView3" destination="KMS-nb-Hva" id="LqJ-27-o8B"/>
+                        <outlet property="segmentedControl" destination="sPt-Wv-asF" id="Wrd-ct-3gg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYO-HN-rgW" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-875.5" y="611.5"/>
         </scene>
     </scenes>
 </document>
