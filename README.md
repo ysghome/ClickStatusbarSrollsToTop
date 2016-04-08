@@ -1,3 +1,3 @@
 # ClickStatusbarSrollsToTop
 
-![](ClickStatusbarSrollsToTop/README/touch_toTop.gif)
+![](https://github.com/ysghome/ClickStatusbarSrollsToTop/blob/master/README/touch_toTop.gif)
