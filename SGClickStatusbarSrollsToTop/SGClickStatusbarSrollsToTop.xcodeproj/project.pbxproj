@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3839482C1CD1BAA200FA7078 /* SGScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3839482B1CD1BAA200FA7078 /* SGScrollManager.m */; };
 		38DF63D91CB6CFEF00BD3F81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DF63D81CB6CFEF00BD3F81 /* main.m */; };
 		38DF63DC1CB6CFEF00BD3F81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DF63DB1CB6CFEF00BD3F81 /* AppDelegate.m */; };
 		38DF63DF1CB6CFEF00BD3F81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DF63DE1CB6CFEF00BD3F81 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		38DF63E71CB6CFEF00BD3F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38DF63E51CB6CFEF00BD3F81 /* LaunchScreen.storyboard */; };
 		38DF63F21CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DF63F11CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTopTests.m */; };
 		38DF63FD1CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DF63FC1CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTopUITests.m */; };
+		770142E92CC31639CFD76048 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634970007B7FF950EA5AFC66 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08E96B29AFDC13F476756194 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3839482A1CD1BAA200FA7078 /* SGScrollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGScrollManager.h; sourceTree = "<group>"; };
+		3839482B1CD1BAA200FA7078 /* SGScrollManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGScrollManager.m; sourceTree = "<group>"; };
 		38DF63D41CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGClickStatusbarSrollsToTop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DF63D81CB6CFEF00BD3F81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38DF63DA1CB6CFEF00BD3F81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		38DF63F81CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGClickStatusbarSrollsToTopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DF63FC1CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTopUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGClickStatusbarSrollsToTopUITests.m; sourceTree = "<group>"; };
 		38DF63FE1CB6CFEF00BD3F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634970007B7FF950EA5AFC66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D61EE391F2598E5374F6BEB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770142E92CC31639CFD76048 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				38DF63F01CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTopTests */,
 				38DF63FB1CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTopUITests */,
 				38DF63D51CB6CFEF00BD3F81 /* Products */,
+				951B7F212BE2F5859A095CC5 /* Pods */,
+				95FC4264D1D0CABF3ED6E9E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +111,7 @@
 		38DF63D61CB6CFEF00BD3F81 /* SGClickStatusbarSrollsToTop */ = {
 			isa = PBXGroup;
 			children = (
+				38F8E5DF1CD0613A002712EA /* ScrollViewHelper */,
 				38DF63DA1CB6CFEF00BD3F81 /* AppDelegate.h */,
 				38DF63DB1CB6CFEF00BD3F81 /* AppDelegate.m */,
 				38DF63DD1CB6CFEF00BD3F81 /* ViewController.h */,
@@ -140,6 +151,32 @@
 			path = SGClickStatusbarSrollsToTopUITests;
 			sourceTree = "<group>";
 		};
+		38F8E5DF1CD0613A002712EA /* ScrollViewHelper */ = {
+			isa = PBXGroup;
+			children = (
+				3839482A1CD1BAA200FA7078 /* SGScrollManager.h */,
+				3839482B1CD1BAA200FA7078 /* SGScrollManager.m */,
+			);
+			path = ScrollViewHelper;
+			sourceTree = "<group>";
+		};
+		951B7F212BE2F5859A095CC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08E96B29AFDC13F476756194 /* Pods.debug.xcconfig */,
+				7D61EE391F2598E5374F6BEB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95FC4264D1D0CABF3ED6E9E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				634970007B7FF950EA5AFC66 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38DF64011CB6CFEF00BD3F81 /* Build configuration list for PBXNativeTarget "SGClickStatusbarSrollsToTop" */;
 			buildPhases = (
+				4162569B04D6D43AB8D2F739 /* Check Pods Manifest.lock */,
 				38DF63D01CB6CFEF00BD3F81 /* Sources */,
 				38DF63D11CB6CFEF00BD3F81 /* Frameworks */,
 				38DF63D21CB6CFEF00BD3F81 /* Resources */,
+				BCCB0416E8C795F3A69DAB84 /* Embed Pods Frameworks */,
+				7C0A23BBD413FA2808356798 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,11 +305,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4162569B04D6D43AB8D2F739 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C0A23BBD413FA2808356798 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCCB0416E8C795F3A69DAB84 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38DF63D01CB6CFEF00BD3F81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3839482C1CD1BAA200FA7078 /* SGScrollManager.m in Sources */,
 				38DF63DF1CB6CFEF00BD3F81 /* ViewController.m in Sources */,
 				38DF63DC1CB6CFEF00BD3F81 /* AppDelegate.m in Sources */,
 				38DF63D91CB6CFEF00BD3F81 /* main.m in Sources */,
@@ -413,6 +502,7 @@
 		};
 		38DF64021CB6CFEF00BD3F81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E96B29AFDC13F476756194 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SGClickStatusbarSrollsToTop/Info.plist;
@@ -425,6 +515,7 @@
 		};
 		38DF64031CB6CFEF00BD3F81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D61EE391F2598E5374F6BEB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SGClickStatusbarSrollsToTop/Info.plist;
@@ -500,6 +591,7 @@
 				38DF64031CB6CFEF00BD3F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38DF64041CB6CFEF00BD3F81 /* Build configuration list for PBXNativeTarget "SGClickStatusbarSrollsToTopTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +600,7 @@
 				38DF64061CB6CFEF00BD3F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38DF64071CB6CFEF00BD3F81 /* Build configuration list for PBXNativeTarget "SGClickStatusbarSrollsToTopUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +609,7 @@
 				38DF64091CB6CFEF00BD3F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

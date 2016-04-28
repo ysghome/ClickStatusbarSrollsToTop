@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "SGScrollManager.h"
+#import <JDStatusBarNotification/JDStatusBarNotification.h>
 
 @interface ViewController () <UIScrollViewDelegate>
 
@@ -59,6 +61,10 @@
     }
 }
 
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    
+}
+
 /**
  *  关闭掉所有的滚动视图的 scrollsToTop 属性 只开启当前显示的滚动视图的 scrollsToTop
  *
@@ -72,6 +78,12 @@
     self.pageTableView2.scrollsToTop = NO;
     self.pageTableView3.scrollsToTop = NO;
     openScrollview.scrollsToTop = YES;
+        
+    [SGSCROLLMANAGER handldSG_DidScrollDelegate:openScrollview withBlock:^(SG_ScrollDirection sg_scrollDirection) {
+        if (sg_scrollDirection == SG_ScrollDirectionBottom) {
+            [JDStatusBarNotification showWithStatus:@"点击我回到顶部" dismissAfter:1.2];
+        }
+    }];
 }
 
 #pragma mark - UITableViewDataSource
